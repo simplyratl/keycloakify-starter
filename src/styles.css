@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply !bg-none;
+}
+
+.kcFormCardClass {
+    @apply !p-6 rounded-xl shadow-lg border border-zinc-300;
+}
+
+.kcHeaderWrapperClass {
+    @apply !text-2xl !font-bold !text-black;
+}
+
+.kcContentWrapperClass .col-md-10 {
+    @apply w-full;
+}
+
+.kcInputWrapperClass {
+    /* @apply bg-red-500; */
+}
+
+.kcInputWrapperClass input {
+    @apply h-8 !text-sm rounded-lg shadow;
+}
+
+.pf-c-form-control[aria-invalid=false] {
+    border: 1px solid;
+    @apply border-zinc-300;
+}
+
+.pf-c-form-control[aria-invalid=true] {
+    @apply border-red-500 border;
+}
+
+.kcFormPasswordVisibilityButtonClass {
+    @apply !h-8 !w-8 p-0 rounded-full ml-4;
+}
+
+.kcInputErrorMessageClass {
+    @apply text-red-500;
+}
